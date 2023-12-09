@@ -1,0 +1,78 @@
+.catalogo-container{
+    padding: 20px;
+}
+
+.card{
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card-image{
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 15px;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text{
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-link{
+    display: block;
+    text-decoration: none;
+    background-color: #007bff;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-link:hover{
+    color: #0056b3;
+}
+
+.main-content2{
+    position: relative;
+    background-image: url('../img/imgInicio2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input{
+    padding: 8px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 16px;
+    outline: none;
+}
+
+.text{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
