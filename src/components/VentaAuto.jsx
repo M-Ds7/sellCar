@@ -13,6 +13,7 @@ const VentaAuto = () => {
     const [esat, setESat] = useState('')
     const [numserie, setNumserie] = useState('')
     const [marcaje, setMarcaje] = useState('')
+    const [repuve, setRepuve] = useState('')
     const [adeudo, setAdeudo] = useState('')
 
     const hadleImagenChange = (event) => {
@@ -26,12 +27,14 @@ const VentaAuto = () => {
             <main className='main-content3'>
                 <form action="form-container">
                     <div className="contentleft">
-                        <div className="input-group">
+                        <div className="form-group">
                             <label htmlFor="imagen">Imagen del carro</label>
                             <input type="file"
                                 id="imagen"
-                                name="image"
-                                accept="image/*"
+                                name="imagen"
+                                accept="imagen/*"
+                                className='submit-image'
+                                value={imagen}
                                 onChange={hadleImagenChange}
                                 required
                             />
@@ -41,6 +44,7 @@ const VentaAuto = () => {
                             <input type="text"
                                 id="emotor"
                                 name="emotor"
+                                value={emotor}
                                 onChange={() => setEMotor(event.target.value)}
                                 required
                             />
@@ -50,6 +54,9 @@ const VentaAuto = () => {
                             <input type="text"
                                 id="ecarroceria"
                                 name="ecarroceria"
+                                value={ecarroceria}
+                                onChange={() => setECarroceria(event.target.value)}
+
                                 required
                             />
                         </div>
@@ -58,6 +65,8 @@ const VentaAuto = () => {
                             <input type="text"
                                 id="einterior"
                                 name="einterior"
+                                value={einterior}
+                                onChange={() => setEInterior(event.target.value)}
                                 required
                             />
                         </div>
@@ -66,56 +75,70 @@ const VentaAuto = () => {
                             <input type="text"
                                 id="modificaciones"
                                 name="modificaciones"
+                                value={modificaciones}
+                                onChange={() => setModificaciones(event.target.value)}
                                 required
                             />
                         </div>
                     </div>
                     <div className="contentright">
-                        <div className="input-group">
+                        <div className="form-group">
                             <label htmlFor="factura">factura</label>
                             <input type="text"
                                 id="factura"
                                 name="factura"
+                                value={factura}
+                                onChange={() => setFactura(event.target.value)}
                                 required
                             />
                         </div>
-                        <div className="input-group">
+                        <div className="form-group">
                             <label htmlFor="esat">estado anter el SAT</label>
                             <input type="text"
                                 id="esat"
                                 name="esat"
+                                value={esat}
+                                onChange={() => setESat(event.target.value)}
                                 required
                             />
                         </div>
-                        <div className="input-group">
+                        <div className="form-group">
                             <label htmlFor="numserie">Numero de serie</label>
                             <input type="text"
                                 id="numserie"
                                 name="numserie"
+                                value={numserie}
+                                onChange={() => setNumserie(event.target.value)}
                                 required
                             />
                         </div>
-                        <div className="input-group">
+                        <div className="form-group">
                             <label htmlFor="marcaje">marcaje</label>
                             <input type="text"
                                 id="marcaje"
                                 name="marcaje"
+                                value={marcaje}
+                                onChange={() => setMarcaje(event.target.value)}
                                 required
                             />
                         </div>
-                        <div className="input-group">
+                        <div className="form-group">
                             <label htmlFor="repuve">REPUVE Y RAPI</label>
                             <input type="text"
                                 id="repuve"
                                 name="repuve"
+                                value={repuve}
+                                onChange={() => setRepuve(event.target.value)}
                                 required
                             />
                         </div>
-                        <div className="input-group">
+                        <div className="form-group">
                             <label htmlFor="adeudos">Adeudos</label>
                             <input type="text"
                                 id="adeudos"
                                 name="adeudos"
+                                value={adeudo}
+                                onChange={() => setAdeudo(event.target.value)}
                                 required
                             />
                         </div>
